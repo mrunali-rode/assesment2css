@@ -1,0 +1,165 @@
+body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.container
+{
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+}
+h2{
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    margin: 10px;
+    padding: 20px;
+    text-shadow: 2px 2px 5px white;
+}
+.main
+{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 200px;
+
+}
+.d
+{
+    display: flex;
+    height: 100px;
+    width: 100px;
+    background-color: greenyellow;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    box-shadow: 10px 10px 10px white;
+    
+}
+.div1
+{
+    transition: all 0.5s ease-in-out;
+    transition-timing-function: 3;
+}
+.div1:hover{
+    transform: rotate(360deg);
+}
+.div2
+{
+    transition: all 1s ease-in-out;
+}
+.div2:hover{
+    transform: rotate(180deg);
+}
+.div3
+{
+    transition: all 1s ease-in-out;
+}
+.div3:hover{
+    transform: rotate(270deg);
+}
+.div4
+{
+    transition: all 1s ease-in-out;
+}
+.div4:hover{
+    transform: rotate(3300deg);
+}
+.div5
+{
+    transition: all 1s ease-in-out;
+    transition-timing-function: 2;
+}
+.div5:hover{
+    transform: rotate(360deg);
+}
+
+@media screen and (min-width:360px) and (max-width:480px)
+{
+    .container{
+        height: 100%;
+    }
+    .d{
+        margin-top: 50px;
+    }
+    .main{
+
+        flex-direction: column;
+        margin-bottom: 20px;
+        margin-left: 10px;
+        margin-top: 0;
+        
+    }
+    
+    
+    .d{
+        position: relative;
+        transition: all 5s;
+
+        animation: moving 5s;
+        animation-duration: 10s;
+        animation-name: move;
+    }
+     @keyframes move {
+        from{
+            left: 0px;
+        }
+        to{
+            left: 100px;
+        } 
+     }
+        
+
+            .div1
+{
+    transition: all 1s ease-in-out;
+    transition-timing-function: 3;
+    transition-property: inherit;
+}
+.div1:hover{
+    cursor: pointer;
+    transform: rotate(360deg);
+   
+    
+}
+.div2
+{
+    transition: all 1s ease-in-out;
+}
+.div2:hover{
+    cursor: pointer;
+    transform: rotate(180deg);
+}
+.div3
+{
+    transition: all 1s ease-in-out;
+}
+.div3:hover{
+    cursor: pointer;
+    transform: rotate(270deg);
+}
+.div4
+{
+    transition: all 1s ease-in-out;
+}
+.div4:hover{
+    cursor: pointer;
+    transform: rotate(330deg);
+}
+.div5
+{
+    transition: all 1s ease-in-out;
+    transition-timing-function: 2;
+}
+.div5:hover{
+    cursor: pointer;
+    transform: rotate(360deg);
+}
+
+        
+        
+    
+
+        
+   
+}
